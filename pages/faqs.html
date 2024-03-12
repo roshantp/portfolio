@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bagaicha | FAQs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/faqs.css">
+    <script src="https://kit.fontawesome.com/226738660f.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body id="body-container">
+
+    <header>
+
+        <!-- desktop navigation -->
+        <nav class="desktop-nav container">
+
+            <!-- header logo -->
+            <div class="header-logo">
+                <a href="../index.html"><img src="../images/header-logo.svg"></a>
+            </div>
+
+            <!-- navigation pptions -->
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./plants.html">Plants</a></li>
+                <li><a href="./updates.html">Updates</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+
+            <!-- navigation icons -->
+            <div class="nav-icon">
+                <i class="fa-solid fa-user dark-green" onclick="openForm()"></i>
+                <a href="./cart.html" class="dark-green"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+
+        </nav>
+
+        <!-- mobile navigation -->
+        <nav class="mobile-nav container">
+
+            <div class="header-logo">
+            <a href="../index.html"><img src="../images/header-logo.svg"></a>
+            </div>
+
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-element" id="mobile-menu">
+
+            <div class="exit-menu"><i class="fa-solid fa-xmark fa-xl grey"  onclick="exitMenu()"></i></div>
+  
+            <div class="menu-logo">
+              <a href="../index.html"><img src="../images/header-logo.svg"></a>
+            </div>
+  
+            <div>
+              <ul class="menu-options">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/plants.html">Plants</a></li>
+                <li><a href="../pages/updates.html">Updates</a></li>
+                <li><a href="../pages/about.html">About</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+              </ul>
+            </div>
+  
+            <div class="menu-icons dark-green">
+              <i class="fa-solid fa-user" onclick="openForm()"></i>
+              <a href="../pages/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+  
+        </div>
+
+    </header>
+
+    <main>
+      <div class="container">
+
+        <h2 class="text-center">FAQs</h2>
+
+        <div class="question-gallery">
+              <div class="questions col-5 col-m-8 col-sm">
+
+                <div>
+                  <div class="question">
+                            <p>Where is your physical store located?</p>
+                            <div onclick="showAnswer()">
+                                <i class="fa-solid fa-plus" id="plus"></i>
+                                <i class="fa-solid fa-minus" id="minus"></i>
+                            </div>
+                            
+                  </div>
+                  <div class="answer" id="answer">
+                            <p>We are located at Madhyapur Thimi, Bhaktapur.</p>
+                  </div>
+                </div>
+
+                <div class="question">
+                        <p>How long will the delivery take?</p>
+                        <i class="fa-solid fa-plus" id="plus"></i>
+                        
+                </div>
+                
+                <div class="question">
+                        <p>What are the payment options?</p>
+                        <i class="fa-solid fa-plus" id="plus"></i>
+                        
+                </div>
+
+              </div>
+
+                <div class="questions col-5 col-m-8 col-sm">
+                      <div class="question ">
+                        <p>How do I join the events?</p>
+                        <i class="fa-solid fa-plus" id="plus"></i>
+                        
+                      </div>
+                      <div class="question ">
+                        <p>Are events you conduct free or paid?</p>
+                        <i class="fa-solid fa-plus" id="plus"></i>
+                        
+                      </div>
+                </div>
+                    
+          </div>
+        </div>
+    </main>
+
+    <footer>
+
+      <div class="container">
+
+        <div class="footer-main col-12">
+
+          <!-- footer logo -->
+          <div class="footer-logo col-3 col-m-5 col-sm">
+            <a href="../index.html"><img src="../images/footer-logo.svg"></a>
+          </div>
+
+          <div class="footer-links-container col-9 col-sm">
+
+            <div class="footer-links">
+              <h4 class="white">Quick Links</h4>
+              <a href="./plants.html" class="white">Plants</a>
+              <a href="./career.html" class="white">Careers</a>
+              <a href="./about.html" class="white">Our Story</a>
+              <a href="./contact.html" class="white">Contact</a>
+            </div>
+
+            <div class="footer-links">
+              <h4 class="white">Blogs and Events</h4>
+              <a href="./blog.html" class="white">We and the Plants</a>
+              <a href="./blog.html" class="white">Green Living</a>
+              <a href="./blog.html" class="white">Sustainable Practice</a>
+            </div>
+
+            <div class="footer-links">
+              <h4 class="white">Support</h4>
+              <a href="./faqs.html" class="white">FAQs</a>
+              <a href="./contact.html" class="white">Contact Support</a>
+            </div>
+
+            <div class="footer-links">
+              <h4 class="white">Newsletter Subscription</h4>
+              <input type="text" id="email" name="email" placeholder="Your Email">
+              <a class="btn primary-btn subscribe-btn" onclick="newsletterSubs()"> Subscribe</a>
+
+            </div>
+
+          </div>
+          
+        </div>
+
+      </div>
+
+      <hr>
+
+      <div class="container">
+        
+        <div class="footer-bottom">
+
+          <div class="social-media-icons">
+            <a href="https://www.facebook.com" class="white" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a>
+            <a href="https://www.instagram.com" class="white" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+            <a href="https://www.youtube.com" class="white" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i></a>
+            <a href="https://www.tiktok.com" class="white" target="_blank"><i class="fa-brands fa-tiktok fa-xl"></i></a>
+          </div>
+
+          <hr class="mobile-element">
+
+          <p class="white text-center">© 2022 Bagaicha, Inc. All Rights Reversed by Rachana Basnet.</p>
+
+        </div>
+
+      
+      </div>
+
+    </footer>
+
+    <!-- Sign in/up Form -->
+    <div class="user-form-container" id="user-form-container">
+
+      <div class="sign-in-form" id="sign-in">
+
+          <div class="cross">
+              <i class="fa-solid fa-xmark fa-2xl grey" id="exit-form" onclick="exitForm()"></i>
+          </div>
+          
+
+          <div class="form form-1">
+
+              <h1 class="text-center">Let's get started.</h1>
+
+              <div class="input-text">
+                  <label>
+                      Email
+                      <span class="error" id="sign-in-email-error">
+                          *Please fill this field*
+                      </span>
+                  </label>
+                  <input type="text" id="sign-in-email" name="email" placeholder="rachanabasnet@gmail.com">
+              
+              </div>
+
+              <div class="input-text">
+                  <label>
+                      Password 
+                      <span class="error" id="sign-in-password-error">*Please fill this field*</span>
+                  </label>
+                  <input type="password" id="sign-in-password" name="password">
+
+                  <div class="remember-me">
+                      <input type="checkbox" id="remember-me" name="remember-me">
+                      <label>
+                          Remember me
+                          <span class="forgot-pass sec-text grey">
+                              <a href="https://www.youtube.com/shorts/SXHMnicI6Pg" target="_blank">
+                                  <i>Forgot Password?</i>
+                              </a>
+                          </span>
+                      </label>
+                  </div>
+                  
+              </div>
+
+              <div class="sign-buttons">
+
+                  <a class="btn primary-btn" onclick="validateSignIn()">
+                      Sign in with email
+                  </a>
+
+                  <a href="https://www.google.com" class="btn other-btns" target="_blank">
+                      <i class="fa-brands fa-google fa-xl"></i> Sign in with Google
+                  </a>
+
+                  <a href="https://www.facebook.com" class="btn other-btns" target="_blank">
+                      <i class="fa-brands fa-facebook fa-xl"></i> Sign in with Facebook
+                  </a>
+
+              </div>
+              
+              <p class="sec-text">Don't Have an account yet? <span class="hover-link" onclick="signUpForm()"><u>Sign Up</u></span></p>
+
+              <p class="text-center sec-text">
+                  Click “Sign In” to agree to Bagaicha's Terms of Service and acknowledge
+                  that Bagaicha's Privacy Policy applies to you.
+              </p>
+              
+              
+
+          </div>
+
+      </div>
+
+      <div class="sign-up-form" id="sign-up">
+
+          <div class="cross">
+              <i class="fa-solid fa-xmark fa-2xl grey" onclick="exitForm()"></i>
+          </div>
+
+          <div class="form form-2">
+
+              <h1 class="text-center">Welcome to the family.</h1>
+
+              <div class="input-section">
+                  <div class="input-text">
+                      <label class="names">
+                          First Name
+                          <span class="error" id="sign-up-fname-error">
+                              *Please fill this field*
+                          </span>
+                      </label>
+                      <input type="text" id="sign-up-fname" name="fname" placeholder="Rachana">
+                  </div>
+                  <div class="input-text">
+                      <label class="names">
+                          Last Name
+                          <span class="error" id="sign-up-lname-error">
+                              *Please fill this field*
+                          </span>
+                      </label>
+                      <input type="text" id="sign-up-lname" name="fname" placeholder="Basnet">
+                  </div>
+              </div>
+
+              <div class="input-text">
+                  <label>
+                      Email
+                      <span class="error" id="sign-up-email-error">
+                          *Please fill this field*
+                      </span>
+                  </label>
+                  <input type="text" id="sign-up-email" name="email" placeholder="rachanabasnet@gmail.com">
+              </div>
+
+              <div class="input-text">
+                  <label>
+                      Password
+                      <span class="error" id="sign-up-password-error">
+                          *Please fill this field*
+                      </span>
+                  </label>
+                  <input type="password" id="sign-up-password" name="password">
+
+                  <div class="remember-me">
+                      <input type="checkbox" id="remember-me" name="remember-me">
+                      <label>I agree to terms and policy.</label>
+                  </div>
+              </div>
+
+              <div class="sign-buttons">
+
+                <a class="btn primary-btn" onclick="validateSignUp()">
+                  Sign in with email
+                </a>
+
+                <a href="https://www.google.com" class="btn other-btns" target="_blank">
+                    <i class="fa-brands fa-google fa-xl"></i> Sign in with Google
+                </a>
+
+                <a href="https://www.facebook.com" class="btn other-btns" target="_blank">
+                    <i class="fa-brands fa-facebook fa-xl"></i> Sign in with Facebook
+                </a>
+
+              </div>
+              
+              <p class="sec-text">Already have and account? <span class="hover-link" onclick="signInForm()"><u>Sign in</u></span></p>
+
+              <p class="text-center sec-text">
+                  Click “Sign In” to agree to Bagaicha's Terms of Service and acknowledge
+                  that Bagaicha's Privacy Policy applies to you.
+              </p>
+              
+          </div>
+
+      </div>
+
+    </div>
+
+    <div class="newsletter-subscribed" id="newsletter-subscribed">
+
+      <div class="newsletter-div">
+
+        <div class="checked">
+          <i class="fa-solid fa-check"></i>
+        </div>
+
+        <h1>Subscribed to Newsletter.</h1>
+      </div>
+
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/faqs.js"></script>
+
+  </body>
+
+</html>

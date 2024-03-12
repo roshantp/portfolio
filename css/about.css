@@ -1,0 +1,130 @@
+.main-banner-div{
+    background-image: url("../images/about-banner.jpg");
+}
+
+.main-banner-div p{
+    margin-top: 30px;
+}
+
+.desktop-story-section{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.story-section-text{
+    width: 50%;
+}
+
+.story-img{
+    height: 500px;
+    width: 47%;
+}
+
+.second-para{
+    margin-top: 10px;
+}
+
+.team{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.team-member{
+    width: 387px;
+}
+
+.team-member-img{
+    height: 387px;
+}
+
+.team-member-name{
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+
+/* Tablet View  */
+@media (max-width: 1200px){
+
+    .desktop-story-section{margin-top: 30px;}
+
+    .story-img{height: 400px;}
+
+    .team{margin-top: 30px;}
+
+    .team-member{width: 220px;}
+    
+    .team-member-img{height: 250px;}
+
+    .team-member-name{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    /* Hiding desktop elements */
+    .desktop-element{display: none;}
+
+}
+
+/* Mobile View  */
+@media (max-width: 767px){
+
+    .desktop-story-section{display: none;}
+
+    .mobile-story-section{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    
+    .story-section-text{
+        width: 100%;
+    }
+
+    .story-section-text p{
+        text-align: justify;
+    }
+    
+    .story-img{
+        margin-top: 20px;
+        height: 300px;
+        width: 100%;
+    }
+
+
+    .team{
+        flex-wrap: wrap;
+        margin-top: 30px;
+        gap: 30px;
+    }
+    
+    .team-member{
+        width: 387px;
+    }
+    
+    .team-member p{
+        text-align: center;
+    }
+
+    .team-member-img{
+        height: 387px;
+    }
+    
+    .team-member-name{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    .desktop-our-story{display: none;}
+
+}

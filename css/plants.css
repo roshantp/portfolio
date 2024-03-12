@@ -1,0 +1,162 @@
+.main-banner-div{
+    background-image: url("../images/plant-banner.jpg");
+}
+
+.plants-category{
+    margin-top: 50px;
+    display: flex;
+}
+
+.plants-filter{
+    position: sticky;
+    top: 120px;
+}
+
+.filter-title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.category-title{
+    margin-top: 20px;
+}
+
+.categories{
+    margin-top: 10px;
+}
+
+.second-title{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.all-plants{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.plant-filter-btns{
+    position: sticky;
+    top: 119px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px 0;
+}
+
+.plants-btn input{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 200;
+    width: 110px;
+}
+
+.plants-btn input:focus{
+    border: none;
+}
+
+.plants-btn{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    gap: 15px;
+    padding: 0 25px;
+    border-radius: 50px;
+    border: 1px solid #080C0A;
+}
+
+.filter-tag{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 50px;
+    background-color: #EFEFEF;
+}
+
+.search-bar{
+    padding-right: 60px;
+}
+
+.load-more-btn{
+    margin-top: 50px;
+}
+
+#load-more-desktop, #load-more-mobile{
+    display: none;
+    width: 100%;
+}
+
+
+
+/* Tablet View  */
+@media (max-width: 1200px){
+    
+    .plant-filter-btns{top: 55px;}
+
+    .mobile-all-plants{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plant-gallery{
+        justify-content: space-evenly;
+    }
+
+    .desktop-element{display: none;}
+
+}
+
+
+
+/* Mobile View  */
+@media (max-width: 767px){
+
+    .second-title{font-size: 14px;}
+
+    h2{text-align: center;}
+
+    .plants-category{margin-top: 30px;}
+
+    .plant-filter-btns{
+        top: 50px;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 10px 0;
+        gap: 8px;
+    }
+
+    .plants-btn{
+        height: 40px;
+        gap: 12px;
+        padding: 0 50px;
+    }
+
+    .plants-btn input{
+        font-size: 14px;
+    }
+
+    .mobile-all-plants{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .plant-gallery{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .filter-tag{
+        height: 40px;
+        padding: 0 95px;
+    }
+
+    .desktop-element{display: none;}
+}

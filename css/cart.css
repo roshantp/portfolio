@@ -1,0 +1,165 @@
+.order-process{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ordered-details{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding-right: 40px;
+}
+
+.order-subtitle, .ordered-plant{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-subtitle-2{
+    display: flex;
+    gap: 155px;
+}
+
+.ordered-plant-details{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.order-subtitle p, .ordered-bold-name{
+    font-size: 20px;
+}
+
+.ordered-plant-img{
+    height: 150px;
+    width: 150px;
+}
+
+.ordered-plant-quantity{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.remove-plant{
+    margin-top: 10px;
+}
+
+.checout-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: #E6EFEA;
+    gap: 25px;
+}
+
+.promo-code{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.promo-text{
+    margin-left: 15px;
+    font-size: 12px;
+}
+
+.promo-code input{
+    padding: 14px 0 14px 20px;
+    border-radius: 12px;
+    border: none;
+    background-color: #D6D6D6;
+    width: 240px;
+    font-size: 14px;
+}
+
+.apply-promo-btn{
+    width: 160px;
+}
+
+.checkout-details{
+    width: 100%;
+}
+
+.checkout-subtitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkout-btns{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+
+
+/* Tablet View  */
+@media (max-width: 1200px){
+
+    .ordered-details{padding-right: 0;}
+
+    .order-process{
+        margin-top: 30px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .promo-code input{width: 360px;}
+
+    .apply-promo-btn{width: 245px;}
+
+    .ordered-plant-details{gap: 25px;}
+
+    /* Hiding desktop elements */
+    .desktop-element{display: none;}
+
+}
+
+/* Mobile View  */
+@media (max-width: 767px){
+
+    .ordered-details{padding-right: 0;}
+
+    .order-subtitle p, .ordered-bold-name{font-size: 14px;}
+
+    .ordered-plant-img{
+        height: 80px;
+        width: 80px;
+    }
+
+    .order-subtitle-2{gap: 55px;}
+
+    .order-process{
+        margin-top: 30px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .promo-code input{
+        width: 240px;
+        height: 38px;
+        font-size: 12px;
+    }
+
+    .promo-code input{
+        padding: 10px 0 10px 20px;
+        width: 150px;
+    }
+
+    .apply-promo-btn{width: 100px;}
+
+    .promo-text{
+        margin-left: 6px;
+        font-size: 10px;
+    }
+
+    .desktop-our-story{display: none;}
+
+}
